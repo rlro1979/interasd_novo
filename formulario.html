@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário de Discussão</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eef2f3;
+            padding: 40px;
+        }
+        .form-container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            max-width: 600px;
+            margin: auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Formulário de Discussão em Sala</h1>
+        <p>Responda às perguntas abaixo com base no que discutimos em sala de aula.</p>
+        <form>
+            <label for="nome">1. Qual é o seu nome?</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="tema">2. Qual foi o tema principal da aula?</label>
+            <input type="text" id="tema" name="tema" required>
+
+            <label for="opiniao">3. O que você achou mais interessante?</label>
+            <textarea id="opiniao" name="opiniao" rows="4" required></textarea>
+
+            <label for="duvida">4. Ficou com alguma dúvida?</label>
+            <textarea id="duvida" name="duvida" rows="3"></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
