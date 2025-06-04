@@ -1,0 +1,51 @@
+  :root {
+    --gray-rgb: 255, 255, 255;
+    --gray-alpha-200: rgba(var(--gray-rgb), 0.145);
+    --gray-alpha-100: rgba(var(--gray-rgb), 0.06);
+
+    --button-primary-hover: #ccc;
+    --button-secondary-hover: #1a1a1a;
+  }
+
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.title {
+  margin-bottom: 20px;
+}
+
+.text {
+  margin-bottom: 20px;
+}
+
+.divlinks {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-bottom: 20px;
+}
+
+.meu-botao {
+  background-color: #008CBA; 
+  color: white; 
+  padding: 10px 20px; 
+  font-size: 16px; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  transition: 0.3s;
+  margin: 0 20px;
+}
+
+
+.meu-botao:hover {
+  background-color: #005f73;
+}
